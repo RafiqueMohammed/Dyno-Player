@@ -1,0 +1,15 @@
+CREATE TABLE IF NOT EXISTS `audio` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `title` varchar(120) NOT NULL,
+  `artist` varchar(250) NOT NULL DEFAULT 'unknown artist',
+  `album` varchar(50) NOT NULL DEFAULT 'unknown album',
+  `thumbnail` varchar(200) NOT NULL DEFAULT 'default_album.jpg',
+  `mp3_path` varchar(120) NOT NULL,
+  PRIMARY KEY (`id`)
+)
+
+INSERT INTO `audio` (`id`, `title`, `artist`, `album`, `music_director`, `thumbnail`, `mp3_path`, `ogg_path`) VALUES
+(1, 'Right Now', 'Akon', 'Freedom  ', 'Akon', 'akon.jpg', 'lonely.mp3', ''),
+(2, 'Lonely', 'Akon', 'Trouble', 'Akon', 'akon.jpg', 'Trouble  ', ''),
+(3, 'I Wanna Love You', 'Akon', 'Konvicted  ', 'Akon', 'akon.jpg', 'lonely.mp3', ''),
+(4, 'Don''t Matter', 'Akon', 'Konvicted', 'Akon', 'akon.jpg', 'Trouble  ', '');
